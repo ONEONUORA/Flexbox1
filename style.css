@@ -1,0 +1,111 @@
+body {
+  margin:  0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+p {
+  color: rgb(144, 139, 139);
+}
+
+h4 {
+  color: rgb(124, 124, 124);
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-top: 2rem;
+  font-family: sans-serif;
+}
+
+.teamContainer {
+  display: flex;
+  justify-content: center;
+  background-color: white;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+.supervisor,
+.teamBuilder,
+.karma,
+.calculator {
+  margin-bottom: 4rem;
+  padding: 1.2rem;
+
+  -webkit-box-shadow: 0px 1px 5px 1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 1px 5px 1px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 1px 5px 1px rgba(0, 0, 0, 0.75);
+  height: 250px;
+}
+
+.supervisor {
+  border-top: 4px solid green;
+}
+
+.teamBuilder {
+  border-top: 4px solid red;
+}
+
+.karma {
+  border-top: 4px solid orange;
+}
+
+.calculator {
+  border-top: 4px solid rgb(163, 163, 239);
+}
+
+
+@media(max-width:768px){
+.center{
+  margin-bottom: 1rem;
+  width: 90%;
+}
+
+.karma{
+  height: 20rem;
+}
+
+.teamBuilder{
+  height: 20rem;
+}
+.supervisor{
+  height: 20rem;
+}
+
+.calculator{
+  height: 20rem;
+}
+
+}
+
+@media screen and (min-width: 750px) {
+  .center {
+    width: 90%;
+    height: 100vh;
+  } 
+  .main {
+    display: flex;
+    justify-content: flex-start;
+    gap: 30px;
+  }
+
+  .supervisor,
+  .calculator {
+    height: 280px;
+    margin-top: 5rem;
+  }
+  .teamBuilder {
+    margin-bottom: 2rem;
+  }
+}
+
+img {
+  max-width: 5rem;
+  max-height: 5rem;
+  float: right;
+}
